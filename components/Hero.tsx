@@ -13,12 +13,13 @@ export default function Hero() {
       <div className="hero-banner" />
       <div className="hero-illustration" aria-hidden>
         <Image
-          src="/storytime-teddy.png"
+          src="/logo.png"
           alt=""
           fill
           sizes="100vw"
           priority
           className="hero-illustration-img"
+          unoptimized
         />
         <div className="hero-illustration-overlay" />
       </div>

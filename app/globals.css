@@ -293,10 +293,10 @@ button:focus-visible {
 }
 
 .hero-illustration-img {
-  object-fit: cover;
-  object-position: 55% 30%;
-  opacity: 0.28;
-  filter: sepia(0.2) saturate(0.85);
+  object-fit: contain;
+  object-position: center;
+  opacity: 0.18;
+  filter: sepia(0.15) saturate(0.9);
 }
 
 .hero-illustration-overlay {
@@ -1568,7 +1568,8 @@ button:focus-visible {
   }
 
   .hero-illustration-img {
-    object-position: 50% 35%;
+    object-position: center;
+    opacity: 0.2;
   }
 
   .pixel-snow {
