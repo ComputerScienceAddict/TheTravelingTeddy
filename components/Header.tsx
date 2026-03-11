@@ -11,19 +11,10 @@ export default function Header() {
     [0, 80],
     ["0 1px 0 rgba(107, 83, 68, 0.08)", "0 4px 20px rgba(107, 83, 68, 0.12)"]
   );
-  const headerBg = useTransform(
-    scrollY,
-    [0, 60],
-    ["rgba(253, 251, 247, 0.95)", "rgba(253, 251, 247, 0.98)"]
-  );
-
   return (
     <motion.header
       className="site-header"
-      style={{
-        boxShadow: headerShadow,
-        backgroundColor: headerBg,
-      }}
+      style={{ boxShadow: headerShadow }}
     >
       <div className="header-inner">
         <Link href="#" className="logo-link" aria-label="The Traveling Teddy Co. — Home">
@@ -33,6 +24,7 @@ export default function Header() {
             className="logo-img"
             width={56}
             height={56}
+            unoptimized
           />
           <span className="header-tagline">Stuffed With Love</span>
         </Link>

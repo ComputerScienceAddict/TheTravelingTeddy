@@ -157,9 +157,7 @@ button:focus-visible {
   right: 0;
   z-index: 100;
   padding: var(--space-md) 0;
-  background: rgba(253, 251, 247, 0.95);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: var(--cream-light);
   border-bottom: 1px solid rgba(107, 83, 68, 0.08);
 }
 
@@ -180,7 +178,11 @@ button:focus-visible {
 
 .logo-img {
   height: 52px;
-  width: auto;
+  width: 52px !important;
+  min-width: 52px;
+  max-width: 52px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .header-tagline {
@@ -621,8 +623,11 @@ button:focus-visible {
 }
 
 .about-logo {
-  width: 140px;
-  height: auto;
+  width: 140px !important;
+  height: 140px !important;
+  min-width: 140px;
+  max-width: 140px;
+  object-fit: contain;
   margin: 0 auto var(--space-sm);
   filter: drop-shadow(0 4px 12px rgba(107, 83, 68, 0.15));
 }
@@ -1195,10 +1200,20 @@ button:focus-visible {
   text-align: center;
 }
 
-.footer-logo {
+.footer-logo-wrap {
   width: 72px;
-  height: auto;
+  height: 72px;
   margin: 0 auto var(--space-sm);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.footer-logo {
+  width: 72px !important;
+  height: 72px !important;
+  min-width: 72px;
+  max-width: 72px;
+  object-fit: contain;
   opacity: 0.9;
 }
 
@@ -1324,7 +1339,10 @@ button:focus-visible {
   }
 
   .logo-img {
-    height: 44px;
+    height: 44px !important;
+    width: 44px !important;
+    min-width: 44px;
+    max-width: 44px;
   }
 
   .hero {
@@ -1415,7 +1433,10 @@ button:focus-visible {
   }
 
   .about-logo {
-    width: 120px;
+    width: 120px !important;
+    height: 120px !important;
+    min-width: 120px;
+    max-width: 120px;
   }
 
   .packages-flyer-wrap {

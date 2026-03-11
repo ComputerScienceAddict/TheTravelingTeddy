@@ -60,6 +60,7 @@ export default function About() {
                   className="about-logo"
                   width={140}
                   height={140}
+                  unoptimized
                 />
                 <p className="about-card-tagline">Est. 2026</p>
               </div>

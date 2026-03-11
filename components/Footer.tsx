@@ -19,6 +19,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-inner">
           <motion.div
+            className="footer-logo-wrap"
             initial={{ opacity: 0, y: 12 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.1, duration: 0.5 }}
@@ -29,6 +30,7 @@ export default function Footer() {
               className="footer-logo"
               width={72}
               height={72}
+              unoptimized
             />
           </motion.div>
           <p className="footer-tagline">Stuffed With Love · Est. 2026</p>
